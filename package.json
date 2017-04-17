@@ -1,1 +1,40 @@
-{     "devDependencies": {         "fancy-log": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-fancy-log",     "homepage": "https://github.com/npmtest/node-npmtest-fancy-log",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-fancy-log.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [fancy-log (v1.3.0)](https://github.com/js-cli/fancy-log#readme) [![npm package](https://img.shields.io/npm/v/npmtest-fancy-log.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-fancy-log) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-fancy-log.svg)](https://travis-ci.org/npmtest/node-npmtest-fancy-log)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "fancy-log": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-fancy-log",
+    "keywords": [
+        "coverage",
+        "test",
+        "fancy-log"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_fancy_log.js",
+    "name": "npmtest-fancy-log",
+    "nameAlias": "npmtest_fancy_log",
+    "nameOriginal": "npmtest-fancy-log",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-fancy-log.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
