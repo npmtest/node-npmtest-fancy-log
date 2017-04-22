@@ -1,4 +1,7 @@
-# test coverage for  [fancy-log (v1.3.0)](https://github.com/js-cli/fancy-log#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-fancy-log.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-fancy-log) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-fancy-log.svg)](https://travis-ci.org/npmtest/node-npmtest-fancy-log)
+# npmtest-fancy-log
+
+#### basic test-coverage for  [fancy-log (v1.3.0)](https://github.com/js-cli/fancy-log#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-fancy-log.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-fancy-log) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-fancy-log.svg)](https://travis-ci.org/npmtest/node-npmtest-fancy-log)
+
 #### Log things, prefixed with a timestamp
 
 [![NPM](https://nodei.co/npm/fancy-log.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fancy-log)
@@ -95,7 +98,8 @@
     "scripts": {
         "test": "lab -cvL test.js"
     },
-    "version": "1.3.0"
+    "version": "1.3.0",
+    "bin": {}
 }
 ```
 
